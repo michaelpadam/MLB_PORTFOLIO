@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=flex, initial-scale=1.0">
+    <title>MICHAEL LANE BOLDT</title>
+    <link rel="stylesheet" href="../Resources/css/index.css">
+</head>
+
+<body>
+
+      <nav class="navbar">
+        <div class="navbar-top">
+          <h2 class="navbar-header">MICHAEL LANE BOLDT</h2>
+          <div class="navbar-contact">
+            <p>MICHAEL.LANE.BOLDT@GMAIL.COM</p>
+            <p>+1 719.648.0021</p>
+          </div>
+        </div>
+        <ul class="navbar-nav">
+          <li><a href="../index.html">ABOUT</a></li>
+          <li><a class="active" href="./project0001.html">PROJECTS</a></li>
+          <!-- <li><a href="#writings">WRITINGS</a></li> -->
+          <li><a id="cv-link" href="#">CV</a></li> <!-- Add an ID to the CV link -->
+        </ul>
+        <ul class="navbar-projects">
+            <li><a href="./project0001.html">PROJECT0001</a></li>
+            <li><a href="./project0002.html">PROJECT0002</a></li>
+            <li><a class="active" href="./project0003.html">PROJECT0003</a></li>
+            <li><a href="./project0004.html">PROJECT0004</a></li>
+        </ul>
+      </nav>
+
+      <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+          <div class="pdf-viewer-container">
+            <embed src="../Resources/Assets/BOLDT_MICHAEL_CV_FA_2024.pdf" type="application/pdf" class="pdf-viewer">
+          </div>
+          <button class="close-button" onclick="closeModal()">[X]</button>
+        </div>
+      </div>
+
+      <div class="page-container">
+        
+
+
+        <div class="page-layout">
+
+            <!-- Left Column -->
+            <div class="left-column">
+              <div class="text-wrapper">
+                  <h1>AUTOMATING ARCHITECTURE</h1>
+                  <p>A BUILDING AS A BYPRODUCT OF RIGOROUS ENGAGEMENT WITH ARTIFICIAL INTELLIGENCE AND AUTOMATION: A 2000 SQUARE METER MIXED-USE DEVELOPMENT IN DTLA SERVED AS A TESTBED FOR RETHINKING DESIGN AT THREE DIFFERENT SCALES:</p>
+                  <ul>
+                    <li> AI FOR SENSING OUR CONTEXT</li>
+                    <li>AI FOR THE AUTOMATION OF DESIGN</li>
+                    <li>AI AS AN INTERFACE FOR LIVING</li>
+                  </ul>
+                    <p>THE RESULT OF EXPERIMENTATION: A MAXIMALLY ARTICULATED MEGASTRUCTURE FOR MUSICIANS, INTERNALLY ADORNED WITH ANECHOIC SPIKES. THE AMBIGUOUS SPACES ARE EQUAL PARTS APARTMENT, RECORDING STUDIO, AND DIY MUSIC VENUE; ALL ENCOURAGING HIGH-DECIBEL OCCUPATION.</p>
+              </div>
+            </div>
+
+                      <!-- Right Column -->
+          <div class="right-column"> 
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1IFiOV3N8s9u3KlHUppVIbZL9WP03Uv8l/preview" width="100%" height="600" allow="autoplay"></iframe>
+            </div>
+
+      </div>
+      </div>
+      </div>
+      
+
+
+<!-- CV MODAL -->
+<script> 
+  // Select the CV link and the modal
+const cvLink = document.getElementById("cv-link");
+const modal = document.getElementById("pdf-modal");
+
+// Add event listener to the CV link
+cv
