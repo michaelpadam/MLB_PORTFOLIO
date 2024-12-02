@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=flex, initial-scale=1.0">
+    <title>MICHAEL LANE BOLDT</title>
+    <link rel="stylesheet" href="../Resources/css/index.css">
+</head>
+
+<body>
+
+      <nav class="navbar">
+        <div class="navbar-top">
+          <h2 class="navbar-header">MICHAEL LANE BOLDT</h2>
+          <div class="navbar-contact">
+            <p>MICHAEL.LANE.BOLDT@GMAIL.COM</p>
+            <p>+1 719.648.0021</p>
+          </div>
+        </div>
+        <ul class="navbar-nav">
+          <li><a href="../index.html">ABOUT</a></li>
+          <li><a class="active" href="./project0001.html">PROJECTS</a></li>
+          <!-- <li><a href="#writings">WRITINGS</a></li> -->
+          <li><a id="cv-link" href="#">CV</a></li> <!-- Add an ID to the CV link -->
+        </ul>
+        <ul class="navbar-projects">
+            <li><a href="./project0001.html">PROJECT0001</a></li>
+            <li><a class="active" href="./project0002.html">PROJECT0002</a></li>
+            <li><a href="./project0003.html">PROJECT0003</a></li>
+            <li><a href="./project0004.html">PROJECT0004</a></li>
+        </ul>
+      </nav>
+
+      <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+          <div class="pdf-viewer-container">
+            <embed src="../Resources/Assets/BOLDT_MICHAEL_CV_FA_2024.pdf" type="application/pdf" class="pdf-viewer">
+          </div>
+          <button class="close-button" onclick="closeModal()">[X]</button>
+        </div>
+      </div>
+
+      <div class="page-container">
+    
+
+
+        <div class="page-layout">
+
+            <!-- Left Column -->
+            <div class="left-column">
+              <div class="text-wrapper">
+                  <h1>SPOLIA 1.0</h1>
+                  <p>STARTED IN THE SPRING OF 2024, SPOLIA BEGAN AS A PLATFORM FOR THE COLLECTION, SCANNING, CATALOGUING, AND REDEPLOYMENT OF BUILDING MATERIALS THAT HAVE LOST THEIR ECONOMIC AND CULTURAL VALUE.</p>
+                  <p>USING SCANNING TECHNOLOGIES, OPTIMIZATION ALGORITHMS, AND ROBOTIC ASSEMBLY, SPOLIA SEEKS TO REDEFINE THE THRESHOLD OF MATERIAL VIABILITY IN CIRCULAR CONSTRUCTION AND INVESTIGATE THE STRUCTURAL AND AESTHETIC REGIMES OF MATERIAL RE-USE IN ARCHITECTURAL AND CULTURAL CONTEXTS.</p>
+              </div>
+            </div>
+
+                      <!-- Right Column -->
+          <div class="right-column"> 
+
+              <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/17mdP2eicx4LZ6AZAqF2U9M31hXBLcERa/preview" width="100%" height="480" allow="autoplay"></iframe>
+              </div>
+
+      </div>
+      </div>
+      </div>
+      
+
+
+<!-- CV MODAL -->
+<script> 
+  // Select the CV link and the modal
+const cvLink = document.getElementById("cv-link");
+const modal = document.getElementById("pdf-modal");
+
+// Add event listener to the CV link
+cvLink.addEventListener("click", function (event) {
+event.preventDefault(); // Prevent default link behavior
+modal.style.display = "flex"; // Show the modal
+});
+
+// Function to close the modal
+function closeModal() {
+modal.style.display = "none";
+}
+
+// Optional: Close modal when clicking outside of it
+window.addEventListener("click", function (event) {
+if (event.target === modal) {
+closeModal();
+}
+});
+
+</script>
+
+
+</body>
+</html>
