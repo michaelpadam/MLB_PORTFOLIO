@@ -289,7 +289,7 @@ h5 {
 /* Right Column */
 .right-column {
     flex: 0 0 61.8%; /* Fixed width for the right column */
-    /* padding-right: 1rem;  Removed for Scroll Bar*/
+    padding-right: 1rem;  /* Removed for Scroll Bar */
     gap: 2rem;
     width: 100%;
     height: auto;
